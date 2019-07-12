@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 html {
     box-sizing: border-box
@@ -104,4 +105,96 @@ input[type="radio"].visually-hidden{
     clip-path:inset(100%);
     clip: rect(0 0 0 0);
     overflow:hidden;
+=======
+html {
+    box-sizing: border-box
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit
+}
+
+body {
+    font-family: "Playfair Display", "Ubuntu";
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.sites-navigation a {
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 24px;
+    color: #818181;
+}
+
+.sites-navigation {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 98px;
+    margin-top: 74px;
+}
+.sites-navigation li {
+    display: inline-block;
+    margin-left: 100px;
+}
+.sites-navigation li:first-child {
+    margin-left: 0;
+}
+
+.zagolovock {
+    text-transform: uppercase;
+    color: rgba(98, 98, 98, 0.5)
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: left
+}
+
+.sites-navigation a:hover,
+.sites-navigation a:focus {
+    color: #9addfb;
+}
+
+.journal{
+    text-align: center;
+}
+
+.journal p {
+    text-align: left
+}
+.info-block{
+    width: 420px;
+    display: inline-block;
+    margin-left: 146px;
+    margin-right: 60px;
+    margin-bottom: 134px;
+}
+
+.info-block:nth-child(2n) {
+    margin-left: 0;
+    margin-right: 146px;
+
+}
+
+button{
+    display: block;
+    width: 166px;
+    height: 58px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 24px;
+    background: #fff; 
+    border: 1px solid #000;
+    margin-bottom: 70px; 
+}
+
+.info-block image {
+    text-align: center
+>>>>>>> c62afca0601c584ccdea8bc18fa74d56b878db73
 }
