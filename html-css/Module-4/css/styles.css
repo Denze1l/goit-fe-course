@@ -7,10 +7,12 @@ h1{
     float: left;
     text-transform: uppercase;
     font-family: "Roboto";
-    font-weight: normal;
+    font-weight: lighter;
     color: #555252;
     margin: 0px;
-    padding-top: 30px  
+    padding-top: 30px;  
+    font-size: 30px;
+    line-height: 32px;
 }
 .touch{
     text-decoration: none;
@@ -25,7 +27,6 @@ h1::first-letter{
 }
 
 .header{
-    height: 160px;
     width: 1110px;
     margin: 0 auto;
 }
@@ -35,6 +36,7 @@ h1::first-letter{
     padding: 0px;
     margin: 0px;
     padding-top: 40px;
+    padding-bottom: 108px;
 }
 .clearfix::after {
     content: "";
@@ -48,6 +50,7 @@ h1::first-letter{
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
+    display: block;
 }
 .navigation{
     float: right;
@@ -190,9 +193,12 @@ h4::after{
     color: #555252;
     letter-spacing: 0.02em;
     margin: 0px;
+    margin-bottom: 12px;
 }
 
-button{
+.news-link{
+    box-sizing: border-box;
+    display: inline-block;
     background-color: #4ec6ab;
     font-family: 'Open Sans';
     font-size: 16px;
@@ -202,8 +208,8 @@ button{
     height: 50px;
     border-radius: 6px;
     box-shadow: 0 0 5px rgba(26, 188, 156, 0.2);
-}
-.news-link{
     text-decoration: none;
     color: #fff;
+    text-align: center;
+    padding-top: 12px;
 }
