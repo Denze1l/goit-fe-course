@@ -271,6 +271,8 @@ input[type="radio"].visually-hidden{
     width: 458px;
     border-radius: 4px;
     resize: none;
+    padding-left: 10px;
+    padding-top: 10px;
 
 }
 
@@ -282,4 +284,8 @@ input[type="radio"].visually-hidden{
     text-transform: uppercase;
     padding-left: 22px;
     padding-top: 18px;
+}
+
+.textarea:focus{
+    outline-offset: 0;
 }
