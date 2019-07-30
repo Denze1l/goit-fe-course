@@ -1,0 +1,355 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'MontserratR';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'MontserratB';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-300 - latin */
+@font-face {
+    font-family: 'RobotoS';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-family: 'RobotoR';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+
+
+/*Header*/
+.header{
+    background-image: url(../img/Vector\ Smart\ Object.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 540px;
+    background-position: center;
+}
+.log_in{
+    display: inline-block;
+    font-family: 'MontserratB';
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: border .2s linear;
+}
+.log_in:hover{
+    border: 2px solid #fff;
+}
+.sign_up{
+    display: inline-block;
+    font-family: 'MontserratB';
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+    transition: border .2s linear;
+}
+.sign_up:hover{
+    border:2px solid #fff;
+}
+.but_div{
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 114px;
+}
+.container{
+    min-height: 540px;
+}
+
+.urlaub{
+    font-family: 'MontserratB';
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.headline{
+    font-family: 'MontserratB';
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+    padding-bottom: 14px;
+}
+.underheadline{
+    font-family: 'RobotoS';
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 16px;
+}
+
+.underheadline span {
+    display: block;
+}
+
+.describtion{
+    width: 292px;
+    margin: 0 auto;
+    text-align: center;
+}
+.holiday_partner{
+    font-family: 'MontserratB';
+    border: none;
+    background-color: #ff4e50;
+    width: 280px;
+    height: 40px;
+    border-radius: 40px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+/*MAIN*/
+.team{
+    width: 292px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 58px;
+}
+.team_headline{
+    font-family: 'MontserratB';
+    font-size: 22px;
+    color: #333333;
+    padding-top: 70px;
+    padding-bottom: 16px;
+ }
+
+.photo_div{
+    position: relative;
+    width: 120px;
+    margin: 0 auto;
+} 
+.box-icon{
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 36px;
+    right: 0px;
+    bottom: 0px;
+}
+.each_member:nth-child(1) .box-icon{
+    background-image: url(../img/znachok1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid #ffffff;
+    border-radius: 100px;
+    
+}
+.each_member:nth-child(2) .box-icon{
+    background-image: url(../img/znachok2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid #ffffff;
+    border-radius: 100px;
+    
+}
+.each_member:nth-child(3) .box-icon{
+    background-image: url(../img/znachok3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid #ffffff;
+    border-radius: 100px;
+    
+}
+.each_member:nth-child(4) .box-icon{
+    background-image: url(../img/znachok4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid #ffffff;
+    border-radius: 100px;
+    
+}
+.partner_name{
+    font-family: 'MontserratB';
+    font-size: 14px;
+    color: #333333;
+    padding-bottom: 16px;
+    padding-top: 20px;
+}
+.about_me{
+    font-family: 'RobotoS';
+    font-size: 14px;
+    color: #666666;
+}
+
+.each_member:nth-child(n){
+    margin-bottom: 28px;
+}
+
+.team_list{
+    width: 216px;
+    margin: 0 auto;
+    list-style: none;
+}
+.wraper{
+    text-align: center;
+    padding-bottom: 28px;
+    padding-top: 20px;
+    margin: 0 auto
+}
+
+.see_other{
+    font-family: "MontserratB";
+    font-size: 14px;
+    color: #ff4e50;
+    border: 2px solid transparent;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    height: 40px;
+    width: 240px;
+    border-radius: 20px;
+    transition: border 0.2s linear
+}
+.see_other:hover{
+    border: 2px solid #ff4e50;
+    
+}
+
+@media (min-width: 768px){
+    .header{
+        min-height: 700px;
+    }
+    .container{
+        width: 670px;
+        margin: 0 auto;
+    }
+    .wraper{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-bottom: 146px;
+        width: 670px;
+
+    }
+    .but_div{
+        margin: 0;
+    }
+    .headline{
+        font-size: 52px;
+        padding-bottom: 34px;
+    }
+    .underheadline{
+        font-size: 24px;
+        padding-bottom: 40px;
+    }
+    .describtion{
+        width: 504px
+    }
+    .team{
+        width: 470px;
+    }
+    .team_headline{
+        padding-bottom: 30px;
+    }
+    .underheadline span {
+        display: inline-block;
+    }
+    .team_list{
+        width: 470px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .each_member{
+        width: 215px;
+    }
+    .each_member:nth-child(-n+2){
+        margin-bottom: 56px;
+    }
+    .each_member:nth-last-child(-n+2){
+        margin-bottom: 40px;
+    }
+    .each_member:first-child{
+        order: 1;
+    }
+    .each_member:nth-child(3){
+        order:2;
+    }
+    .each_member:nth-child(2){
+        order: 3;
+    }
+    .each_member:nth-child(4){
+        order: 4;
+    }
+
+    
+}
+
+@media (min-width: 1440px){
+
+    .container{
+        width: 940px;
+        margin: 0 auto;
+    }
+    .wraper{
+        margin-bottom: 280px;
+        width: 940px;
+
+    }
+    .team{
+        width: 940px;
+    }
+    .team_headline{
+        padding-bottom: 36px;
+    }
+    .team_list{
+        width: 940px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .each_member{
+        width: 215px;
+    }
+ 
+    .each_member:{
+        margin-bottom: 40px;
+    }
+
+}
