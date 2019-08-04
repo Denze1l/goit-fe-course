@@ -88,6 +88,7 @@ header .container{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 24px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -95,6 +96,10 @@ header .container{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+}
+
+.header__title{
+    margin: 0;
 }
 .main-navigation{
     list-style: none;
@@ -128,6 +133,7 @@ header .container{
 
 
 .main-navigation__navigation-link{
+    display: block;
     font-family: 'Montserrat';
     font-size: 14px;
     text-transform: uppercase;
@@ -179,13 +185,13 @@ header .container{
     text-align: center;
 }
 
-.container_sitename_uppertitle{
+.container__sitename-uppertitle{
     font-family: 'Kaushan Script';
     font-size: 72px;
     color: #fff;
     padding-bottom: 50px;
 }
-.container_sitenam_title{
+.container__sitename-title{
     font-family: 'MontserratB';
     font-size: 150px;
     line-height: 140px;
@@ -209,7 +215,7 @@ header .container{
 
 /*MAIN*/
 /*SERVICES*/
-.main__subtitle{
+.contents__subtitle{
     padding-top: 50px;
     font-family: 'Kaushan Script';
     font-size: 24px;
@@ -218,7 +224,7 @@ header .container{
     color: #333333;   
 }
 
-.main__title{
+.contents__title{
     position: relative;
     font-family: 'Montserrat';
     font-size: 30px;
@@ -227,7 +233,7 @@ header .container{
     text-align: center;
     padding-bottom: 100px;
 }
-.main__title::after{
+.contents__title::after{
     position: absolute;
     content: "";
     bottom: 66px;
@@ -251,7 +257,7 @@ header .container{
     width: 1160px;
     margin: 0 auto;
 }
-.main__subtitle{
+.contents__subtitle{
     padding-bottom: 10px;
     text-align: center;
 }
@@ -287,24 +293,26 @@ header .container{
     background-size: contain;
 }
 
-.features-list__feature:nth-child(1)::before {
+
+.features-list__feature--alarm::before {
     background-image: url(../img/features/ALARM.png);
 }
-.features-list__feature:nth-child(2)::before {
+.features-list__feature--graph::before {
     background-image: url(../img/features/LINE\ GRAPH.png);
 }
-.features-list__feature:nth-child(3)::before {
+.features-list__feature--computer::before {
     background-image: url(../img/features/COMPUTER\ _\ OK.png);
 }
-.features-list__feature:nth-child(4)::before {
+.features-list__feature--book::before {
     background-image: url(../img/features/BOOK\ 2.png);
 }
-.features-list__feature:nth-child(5)::before {
+.features-list__feature--home::before {
     background-image: url(../img/features/HOME.png);
 }
-.features-list__feature:nth-child(6)::before {
+.features-list__feature--square::before {
     background-image: url(../img/features/IMAGE.png);
 }      
+
 
 .feature__name{
     text-transform: uppercase;
@@ -344,14 +352,14 @@ header .container{
     margin: 0 auto;
 }
 
-.our-team__each-member{
+.team{
     list-style: none;
     position: relative;
     text-align: center;
     padding-bottom: 80px;
     
 }
-.our-team__each-member:hover{
+.team:hover{
     opacity: 1;
     -webkit-transition: all .2s linear;
     -o-transition: all .2s linear;
@@ -413,7 +421,7 @@ header .container{
 .our-team__div-forlinks:hover{
     opacity: 1;
 }
-.social-wrap{
+.team__list{
     position: absolute;
     list-style: none;
     display: -webkit-box;
@@ -429,7 +437,7 @@ header .container{
             align-items: center;
 }
 
-.soc_li_link:not(:last-child){
+.team__link:not(:last-child){
     margin-right: 1px;
 }
 
@@ -454,7 +462,7 @@ header .container{
 .social_link:hover{
     background-color: #f38181;
 }
-.social-wrap svg{
+.team__list svg{
     display: block;
     width: 30px;
     height: 32px;
